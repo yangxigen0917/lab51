@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+// 1. Get inputs a, b, c
+let a = prompt("Enter coefficient a (a>0)");
+let b = prompt("Enter coefficient b");
+let c = prompt("Enter coefficient c");
+
+// 2. Convert to numbers
+a = parseFloat(a);
+b = parseFloat(b);
+c = parseFloat(c);
+
+// 3. Calculate delta
+let delta = b*b - 4*a*c;
+
+// 4. Calculate roots
+let x1 = (-b + Math.sqrt(delta)) / (2*a);
+let x2 = (-b - Math.sqrt(delta)) / (2*a);
+
+// 5. Show result with alert
+alert("Quadratic Equation Results:\nx1 = " + x1 + "\nx2 = " + x2);
+
+// 6. Show result in console
+console.log("x1 =", x1);
+console.log("x2 =", x2);
+</script>
+</body>
+</html>
